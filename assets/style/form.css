@@ -1,0 +1,903 @@
+/* nunito-300 - latin */
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/nunito-v10-latin-300.eot');
+    /* IE9 Compat Modes */
+    src: local('Nunito Light'), local('Nunito-Light'),
+        url('../fonts/nunito-v10-latin-300.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/nunito-v10-latin-300.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/nunito-v10-latin-300.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/nunito-v10-latin-300.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/nunito-v10-latin-300.svg#Nunito') format('svg');
+    /* Legacy iOS */
+}
+
+/* nunito-regular - latin */
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/nunito-v10-latin-regular.eot');
+    /* IE9 Compat Modes */
+    src: local('Nunito Regular'), local('Nunito-Regular'),
+        url('../fonts/nunito-v10-latin-regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/nunito-v10-latin-regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/nunito-v10-latin-regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/nunito-v10-latin-regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/nunito-v10-latin-regular.svg#Nunito') format('svg');
+    /* Legacy iOS */
+}
+
+/* nunito-600 - latin */
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/nunito-v10-latin-600.eot');
+    /* IE9 Compat Modes */
+    src: local('Nunito SemiBold'), local('Nunito-SemiBold'),
+        url('../fonts/nunito-v10-latin-600.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/nunito-v10-latin-600.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/nunito-v10-latin-600.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/nunito-v10-latin-600.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/nunito-v10-latin-600.svg#Nunito') format('svg');
+    /* Legacy iOS */
+}
+
+/* nunito-700 - latin */
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/nunito-v10-latin-700.eot');
+    /* IE9 Compat Modes */
+    src: local('Nunito Bold'), local('Nunito-Bold'),
+        url('../fonts/nunito-v10-latin-700.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/nunito-v10-latin-700.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/nunito-v10-latin-700.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/nunito-v10-latin-700.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/nunito-v10-latin-700.svg#Nunito') format('svg');
+    /* Legacy iOS */
+}
+
+/* nunito-900 - latin */
+@font-face {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/nunito-v10-latin-900.eot');
+    /* IE9 Compat Modes */
+    src: local('Nunito Black'), local('Nunito-Black'),
+        url('../fonts/nunito-v10-latin-900.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/nunito-v10-latin-900.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/nunito-v10-latin-900.woff') format('woff'),
+        /* Modern Browsers */
+        url('../fonts/nunito-v10-latin-900.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/nunito-v10-latin-900.svg#Nunito') format('svg');
+    /* Legacy iOS */
+}
+
+/* workSans-300 - latin */
+@font-face {
+    font-family: Work_Sans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/work_sans/WorkSans-Light.ttf');
+}
+
+/* workSans-regular - latin */
+@font-face {
+    font-family: Work_Sans;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/work_sans/WorkSans-Regular.ttf');
+}
+
+/* workSans-medium - latin */
+@font-face {
+    font-family: Work_Sans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/work_sans/WorkSans-Medium.ttf');
+}
+
+/* workSans-600 - latin */
+@font-face {
+    font-family: Work_Sans;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/work_sans/WorkSans-SemiBold.ttf');
+}
+
+/* workSans-700 - latin */
+@font-face {
+    font-family: Work_Sans;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/work_sans/WorkSans-Bold.ttf');
+}
+
+:root {
+    --main-color: #3065EF;
+    --black: #010223;
+    --green: #0EE230;
+    --grey: #E3E3E3;
+    --dark-grey: #808191;
+    --opa-2: #D2D2D2;
+    --black-foot: #282828;
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: Work_Sans, sans-serif !important;
+}
+
+
+html,
+body,
+p,
+ol,
+ul,
+li {
+    font-family: Work_Sans, sans-serif !important;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Work_Sans, sans-serif !important;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+.form {
+    max-width: 1040px;
+    min-height: 644px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.tabs-akun ul {
+    list-style-type: none;
+    height: 70px;
+}
+
+.tabs-akun ul span {
+    padding: 0 5px;
+}
+
+.tabs-akun ul.sign {
+    background-color: var(--main-color);
+}
+
+.tabs-akun ul.tanpa_daftar {
+    background-color: #F1F1F1;
+}
+
+.form .isi-form {
+    padding: 60px 90px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    width: calc(100% - 20px);
+    margin-top: 10px;
+}
+
+.text-input {
+    padding: 10px;
+    background: none;
+    border: 1px solid #D5D5D5;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+}
+
+.half-input {
+    padding: 10px;
+    background: none;
+    border: 1px solid #D5D5D5;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: calc(100% - 20px);
+}
+
+.form .isi-form .form-comp {
+    margin-bottom: 25px;
+}
+
+.form .isi-form .forget p {
+    margin-left: 15px;
+}
+
+.form .masuk button {
+    margin-top: 50px;
+}
+
+.form .masuk .or {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: #D5D5D5;
+}
+
+.form .masuk .or p {
+    padding: 0 10px;
+}
+
+.form .masuk .or .garis {
+    width: 100%;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.form .daftar .jenis-kelamin {
+    margin-top: 10px;
+}
+
+.form .daftar .select {
+    margin-top: 10px;
+}
+
+
+.form .daftar .select select {
+    height: 40px;
+    width: 100%;
+}
+
+.form .daftar .select select:nth-child(2) {
+    margin: 0 15px;
+}
+
+
+.form .daftar .jenis-kelamin button:nth-child(1) {
+    margin-right: 7.5px;
+}
+
+.form .daftar .jenis-kelamin button:nth-child(2) {
+    margin-left: 7.5px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.screen-2 {
+    display: none;
+}
+
+.screen-3{
+    display: none;
+}
+
+.screen-4{
+    display: none;
+}
+
+.screen-5{
+    display: none;
+}
+
+.tab-go{
+    opacity: 0.6;
+}
+
+.activeGo{
+    text-decoration: underline;
+    color: white;
+    opacity: 1;
+}
+
+.form .title{
+    width: 100%;
+    height: 70px;
+    background: var(--main-color);
+}
+
+.cont-2{
+    margin: 0 90px;
+}
+
+.form .header-detail-belanja{
+    margin-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.form .body-detail-belanja{
+    margin-top: 50px;
+}
+
+.form .grid-picture{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 20px;
+}
+
+.form .grid-picture .big{
+    grid-column: 1/3;
+}
+.form .grid-picture .big img{
+    width: 100%;
+    height: 100%;
+}
+
+.form .grid-picture .small img{
+    width: 100%;
+    height: 100%;
+}
+
+.form .price-detail{
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 11px;
+}
+
+.form .price{
+    margin-left: 60px; 
+}
+
+.form .material{
+    margin-top: 30px;
+}
+
+.body-detail-belanja .input{
+    margin-top: 45px;
+}
+
+.input-quantity{
+    border: 1px solid #BFC0C8;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.input-quantity .text-25-darkGrey{
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.input-quantity .text-25-darkGrey:nth-child(1){
+    border-right: 1px solid #BFC0C8;
+}
+
+.input-quantity .text-25-darkGrey:nth-child(3){
+    border-left: 1px solid #BFC0C8;
+}
+
+.warna {
+    margin-left: 45px; 
+}
+
+.warna .kumpulan-warna{
+    margin-top: 10px;
+}
+
+.warna .kumpulan-warna img{
+    width: 34px;
+    height: 34px;
+}
+
+.input-form-lagi .form-comp{
+    margin-top: 25px;
+}
+
+.daftar{
+    margin-top: 15px;
+}
+
+.mt-tambah{
+    margin-top: 50px;
+}
+
+.total-belanja{
+    padding: 30px 0 50px 0;
+    border-top: 1px solid #d5d5d5;
+    margin-top: 20px;
+}
+
+.metode{
+    margin-bottom: 60px;
+}
+
+#metodee{
+    width: 100%;
+    background-color: var(--green) !important;
+    color: #fff !important;
+}
+
+#dapatkan{
+    width: 100%;
+    background-color: var(--green) !important;
+    color: #fff !important;
+    margin-top: 50px;
+}
+
+.virtual h1{
+    text-align: center;
+    margin: 60px auto 30px auto;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+.main-btn,
+.secondary-btn,
+.btn-success {
+    display: inline-block !important;
+    cursor: pointer;
+}
+
+
+
+:root {
+    --main-color: #3065EF;
+    --black: #010223;
+    --green: #0EE230;
+    --grey: #E3E3E3;
+    --dark-grey: #808191;
+    --opa-2: #D2D2D2;
+    --black-foot: #282828;
+}
+
+
+body,
+button,
+input,
+select,
+textarea,
+a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+
+.text-cover-white {
+    font-size: 65px;
+    font-weight: 900;
+    color: white;
+}
+
+.text-11-main {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.text-reg-main {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.text-16-main {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.text-18-main{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.text-20-main {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.text-21-main {
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.text-21-main-reg{
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.text-24-main {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.text-30-main {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+
+.text-40-main {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+
+
+.text-11-white {
+    font-size: 11px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.text-reg-white {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.text-reg-white {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.text-reg-white-regular{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.text-reg-white-medium{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.text-reg-white-semi{
+    font-size: 14px;
+    font-weight: 600;
+    color:#fff;
+}
+
+.text-reg-white-bold{
+    font-size: 14px;
+    font-weight: 700;
+    color:#fff;
+}
+
+.text-16-white {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.text-18-white {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.text-20-white{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.text-23-white {
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.text-30-white {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.text-14-black{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.text-18-black {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.text-20-black {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.text-30-black {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.text-30-black-semi{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+.text-20-grey{
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+    opacity: .5;
+}
+
+.text-14-grey {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey);
+    
+}
+
+.text-14-darkGrey{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
+.text-18-darkGrey{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-grey);
+}
+
+.text-25-darkGrey{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--dark-grey);
+}
+
+
+.text-14-green{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--green);
+}
+
+.text-16-green{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--green);
+}
+
+.text-18-green{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--green);
+}
+
+.text-coret{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--black);
+    opacity: .5;
+    text-decoration: line-through;
+}
+.main-btn {
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 30px;
+
+}
+
+.btn-success{
+    width: 100%;
+    padding: 18px 0;
+    background-color: var(--green);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.placeholder {
+    text-align: center;
+    padding: 15px 30px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.placeholder-min {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+}
+
+
+.placeholder-small {
+    text-align: center;
+    padding: 5px 10px;
+    width: 70px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 3px;
+}
+
+
+.secondary-btn {
+    background-color: #fff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 12px 30px;
+
+}
+
+.rounded-main-btn {
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 15px 15px;
+    -webkit-box-shadow: 0px 0px 80px 4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 80px 4px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 80px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.rounded-secondary-btn {
+    background-color: #fff; 
+    color: var(--main-color);
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 15px 15px;
+    -webkit-box-shadow: 0px 0px 80px 4px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px 0px 80px 4px rgba(0,0,0,0.52);
+    box-shadow: 0px 0px 80px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.social-btn{
+    height: 55px;
+    font-size: 16px;
+    width: 98%;
+    color: #34354F;
+    font-weight: 500;
+    border: 1px solid #C4C4C4;
+    background-color: #F5F5F5;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button#alamat{
+    width: 100% !important;
+    margin-top: 40px;
+}
+
+button#ringkasan-belanja{
+    width: 100%;
+    margin: 40px 0;
+    background-color: var(--green);
+      color: #fff !important;
+}
+
+.gap-30{
+    padding: 0 15px;
+}
+
+.btn-kelamin{
+    height: 44px;
+    width: 100%;
+    background:none;
+    border: 1px solid #D5D5D5;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.kelamin-active{
+    background: var(--main-color) !important;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.social-btn span{
+    margin-right: 15px;
+}
+
+.pr-30{
+    padding-right: 30px;
+}
+
+.px-30{
+    padding: 0 30px;
+}
+
+.pembayaran h2{
+    margin: 60px 0 30px 0;
+}
+
+.pembayaran h1{
+    margin-bottom: 45px;
+}
+
+.pembayaran p{
+    margin-bottom: 20px;
+}
+
+.container:not(:first-of-type){
+    position: absolute;
+    z-index: 1000000000000;
+    top: 200px;
+    background: white;
+    width: 1040px;
+    left: 15%;
+}
+
+.container .screen-2 {
+    overflow-y: scroll;
+}

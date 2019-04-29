@@ -1,0 +1,50 @@
+.price-harga-2 .input{
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.price-harga-2 .input input{
+    width: 100%;
+    padding: 15px 0 15px 25px;
+    border: 1px solid #BFC0C8;
+}
+
+.price-harga-2 .input button{
+    width: 152px;
+    height: 52px;
+    background: #71C046;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+}
+
+.price-harga-2 .sebelum p:nth-child(1){
+    color: #010223;
+    font-weight: 500;
+}
+
+.price-harga-2 .sebelum p:nth-child(2){
+    color: #77788F;
+}
+
+.price-harga-2 .orang-lelang{
+    margin-top: 30px;
+}
+
+.price-harga-2 .orang-lelang .ket-left{
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+
+.price-harga-2 .orang-lelang span{
+    display: block;
+    margin-top: 2px;
+}
+
+.price-harga-2 .orang-lelang span a{
+    color: #3065EF;
+    text-decoration: underline;
+    
+}

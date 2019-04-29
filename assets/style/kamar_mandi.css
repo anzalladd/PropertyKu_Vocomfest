@@ -1,0 +1,11 @@
+.banner {
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

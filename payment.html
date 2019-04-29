@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/form.css">
+    <link rel="stylesheet" href="./assets/style/payment.css">
+    <link rel="stylesheet" href="./assets/style/magrid.css">
+    <link rel="stylesheet" href="./assets/style/slick.css">
+    <title>Payment</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <!-- NavBar -->
+            <div class="container">
+                <nav class="flex wrap align-center row">
+                    <div class="logo flex-xxl-2 flex-xl-2 flex-lg-2 flex-md-12 flex justify-between align-center">
+                        <img src="./assets/img/logo.svg" alt="logo">
+                        <div class="icon-responsive">
+                            <img src="./assets/img/bar.svg" alt="bar">
+                            <img src="./assets/img/love.svg" alt="love">
+                            <img src="./assets/img/chart.svg" alt="chart">
+                            <img src="./assets/img/user.svg" alt="user">
+                        </div>
+                    </div>
+                    <div class="input flex-xxl-6 flex-xl-5 flex-lg-5 flex-md-10 flex res align-center">
+                        <div class="search-input flex align-center">
+                            <span id="icon-input" class="flex-col align-center justify-center">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" id="setting">
+                                    <path
+                                        d="M3 6.55051V1C3 0.723995 2.77601 0.5 2.5 0.5C2.224 0.5 2 0.72402 2 1V6.55049C0.858995 6.78201 0 7.79054 0 9.00002C0 10.2095 0.858995 11.218 2 11.4495V14C2 14.276 2.224 14.5 2.5 14.5C2.77601 14.5 3 14.276 3 14V11.4495C4.14101 11.218 5 10.2095 5 9.00005C5 7.79056 4.14101 6.78201 3 6.55051ZM2.5 10.5C1.6715 10.5 1 9.82853 1 9.00002C1 8.17152 1.6715 7.5 2.5 7.5C3.32851 7.5 4 8.17152 4 9.00002C4 9.82853 3.32851 10.5 2.5 10.5ZM8 1.55051V1C8 0.723995 7.77598 0.5 7.5 0.5C7.22402 0.5 7 0.723995 7 1V1.55049C5.859 1.78199 5 2.79049 5 4C5 5.20951 5.859 6.21799 7 6.44949V14C7 14.276 7.224 14.5 7.5 14.5C7.776 14.5 8 14.276 8 14V6.44951C9.141 6.21802 10 5.20951 10 4.00002C10 2.79054 9.141 1.78201 8 1.55051ZM7.5 5.5C6.67149 5.5 6 4.82851 6 4C6 3.1715 6.67149 2.5 7.5 2.5C8.32851 2.5 9 3.1715 9 4C9 4.82851 8.32851 5.5 7.5 5.5ZM13 8.55052V1C13 0.723995 12.776 0.5 12.5 0.5C12.224 0.5 12 0.723995 12 1V8.55052C10.859 8.78201 10 9.79051 10 11C10 12.2095 10.859 13.218 12 13.4495V14C12 14.276 12.224 14.5 12.5 14.5C12.776 14.5 13 14.276 13 14V13.4495C14.141 13.218 15 12.2095 15 11C15 9.79054 14.141 8.78203 13 8.55052ZM12.5 12.5C11.6715 12.5 11 11.8285 11 11C11 10.1715 11.6715 9.5 12.5 9.5C13.3285 9.5 14 10.1715 14 11C14 11.8285 13.3285 12.5 12.5 12.5Z"
+                                        fill="#666666" />
+                                </svg>
+                                <div class="setting-more">
+                                    <div class="harga">
+                                        <h6>Tentukan Harga</h6>
+                                        <div class="input flex-col">
+                                            <input type="text" placeholder="Harga Terendah">
+                                            <input type="text" placeholder="Harga Tertinggi">
+                                        </div>
+                                    </div>
+                                    <div class="warna">
+                                        <h6>Tentukan Warna</h6>
+                                        <div class="kumpul-warna">
+                                            <div class="red" style="background-color:#FE0000;"><img
+                                                    src="./assets/img/centang.svg" alt="centang"></div>
+                                            <div class="red" style="background-color:#B000D2;"></div>
+                                            <div class="red" style="background-color:#1300D5;"><img
+                                                    src="./assets/img/centang.svg" alt="centang"></div>
+                                            <div class="red" style="background-color:#0ED601;"><img
+                                                    src="./assets/img/centang.svg" alt="centang"></div>
+                                            <div class="red" style="background-color:#FFFC01;"></div>
+                                            <div class="red" style="background-color:#FE9400;"><img
+                                                    src="./assets/img/centang.svg" alt="centang"></div>
+                                            <div class="red" style="background-color:#FF5801;"></div>
+                                            <div class="red" style="background-color:#00AEB1;"></div>
+                                            <div class="red" style="background-color:#675A59;"><img
+                                                    src="./assets/img/centang.svg" alt="centang"></div>
+                                            <div class="red" style="background-color:#C4C4C4;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="daerah">
+                                        <h6>Tentukan Daerah </h6>
+                                        <div class="flex-col">
+                                            <select name="daerah" id="daerah">
+                                                <option value="1">Purwokerto</option>
+                                                <option value="2">Banyumas</option>
+                                            </select>
+                                            <button class="main-btn">Selesai</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </span>
+                            <input type="text" placeholder="Cari Barang Furniture Anda">
+                        </div>
+                        <button class="main-btn">Cari&nbsp;Barang</button>
+                    </div>
+                    <div class="nav-right flex-xxl-4 flex-xl-5 flex-md-6 flex-lg-5 res">
+                        <div class="nav-right-comp flex justify-between align-center">
+                            <a href="payment.html" style="color: #666">Mulai&nbsp;Jualan</a>
+                            <span id="icon-navRight" class="flex align-center justify-around">
+                                <div class="flex-col align-center justify-center" style="margin-right:28px">
+                                    <img src="./assets/img/love.svg" alt="heart" id="heart">
+                                    <div class="love-more">
+                                        <div class="love-judul flex justify-between">
+                                            <h6>Disukai</h6>
+                                            <small>Total: 27 Barang</small>
+                                        </div>
+                                        <div class="lists-love flex-col justify-between">
+                                            <div class="list-love flex align-center">
+                                                <img src="../vocom/assets/img/kursi_pink.png" alt="">
+                                                <span>
+                                                    <h5>Kursi Modern..</h5>
+                                                    <small>Rp. 100.000</small>
+                                                </span>
+                                            </div>
+                                            <div class="list-love flex align-center">
+                                                <img src="../vocom/assets/img/kursi_pink.png" alt="">
+                                                <span>
+                                                    <h5>Kursi Modern..</h5>
+                                                    <small>Rp. 100.000</small>
+                                                </span>
+                                            </div>
+                                            <div class="list-love flex align-center">
+                                                <img src="../vocom/assets/img/kursi_pink.png" alt="">
+                                                <span>
+                                                    <h5>Kursi Modern..</h5>
+                                                    <small>Rp. 100.000</small>
+                                                </span>
+                                            </div>
+                                            <div class="list-love flex align-center">
+                                                <img src="../vocom/assets/img/kursi_pink.png" alt="">
+                                                <span>
+                                                    <h5>Kursi Modern..</h5>
+                                                    <small>Rp. 100.000</small>
+                                                </span>
+                                            </div>
+                                            <div class="list-love flex align-center">
+                                                <img src="../vocom/assets/img/kursi_pink.png" alt="">
+                                                <span>
+                                                    <h5>Kursi Modern..</h5>
+                                                    <small>Rp. 100.000</small>
+                                                </span>
+                                            </div>
+                                            <button class="main-btn">Lihat Semua</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/chart.svg" alt="cart">
+                            </span>
+                            <span id="btn-navRight" class="flex align-center">
+                                <button class="secondary-btn">Masuk</button>
+                                <button class="main-btn">Daftar</button>
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- End Navbar -->
+            <!-- Navigasi Product -->
+            <div class="container-pad navigasi-product">
+                <p>Home > Meja > Meja Modern > Meja Cokelat Modern</p>
+            </div>
+            <!-- End Navigasi Product -->
+            <div class="nav-responsive flex wrap">
+                <div class="input flex align-center flex-lg-12 container">
+                    <div class="search-input flex align-center">
+                        <span id="icon-input" class="flex-col align-center justify-center">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" id="setting">
+                                <path
+                                    d="M3 6.55051V1C3 0.723995 2.77601 0.5 2.5 0.5C2.224 0.5 2 0.72402 2 1V6.55049C0.858995 6.78201 0 7.79054 0 9.00002C0 10.2095 0.858995 11.218 2 11.4495V14C2 14.276 2.224 14.5 2.5 14.5C2.77601 14.5 3 14.276 3 14V11.4495C4.14101 11.218 5 10.2095 5 9.00005C5 7.79056 4.14101 6.78201 3 6.55051ZM2.5 10.5C1.6715 10.5 1 9.82853 1 9.00002C1 8.17152 1.6715 7.5 2.5 7.5C3.32851 7.5 4 8.17152 4 9.00002C4 9.82853 3.32851 10.5 2.5 10.5ZM8 1.55051V1C8 0.723995 7.77598 0.5 7.5 0.5C7.22402 0.5 7 0.723995 7 1V1.55049C5.859 1.78199 5 2.79049 5 4C5 5.20951 5.859 6.21799 7 6.44949V14C7 14.276 7.224 14.5 7.5 14.5C7.776 14.5 8 14.276 8 14V6.44951C9.141 6.21802 10 5.20951 10 4.00002C10 2.79054 9.141 1.78201 8 1.55051ZM7.5 5.5C6.67149 5.5 6 4.82851 6 4C6 3.1715 6.67149 2.5 7.5 2.5C8.32851 2.5 9 3.1715 9 4C9 4.82851 8.32851 5.5 7.5 5.5ZM13 8.55052V1C13 0.723995 12.776 0.5 12.5 0.5C12.224 0.5 12 0.723995 12 1V8.55052C10.859 8.78201 10 9.79051 10 11C10 12.2095 10.859 13.218 12 13.4495V14C12 14.276 12.224 14.5 12.5 14.5C12.776 14.5 13 14.276 13 14V13.4495C14.141 13.218 15 12.2095 15 11C15 9.79054 14.141 8.78203 13 8.55052ZM12.5 12.5C11.6715 12.5 11 11.8285 11 11C11 10.1715 11.6715 9.5 12.5 9.5C13.3285 9.5 14 10.1715 14 11C14 11.8285 13.3285 12.5 12.5 12.5Z"
+                                    fill="#666666" />
+                            </svg>
+                            <div class="setting-more">
+                                <div class="harga">
+                                    <h6>Tentukan Harga</h6>
+                                    <div class="input flex-col">
+                                        <input type="text" placeholder="Harga Terendah">
+                                        <input type="text" placeholder="Harga Tertinggi">
+                                    </div>
+                                </div>
+                                <div class="warna">
+                                    <h6>Tentukan Warna</h6>
+                                    <div class="kumpul-warna">
+                                        <div class="red" style="background-color:#FE0000;"><img
+                                                src="./assets/img/centang.svg" alt="centang"></div>
+                                        <div class="red" style="background-color:#B000D2;"></div>
+                                        <div class="red" style="background-color:#1300D5;"><img
+                                                src="./assets/img/centang.svg" alt="centang"></div>
+                                        <div class="red" style="background-color:#0ED601;"><img
+                                                src="./assets/img/centang.svg" alt="centang"></div>
+                                        <div class="red" style="background-color:#FFFC01;"></div>
+                                        <div class="red" style="background-color:#FE9400;"><img
+                                                src="./assets/img/centang.svg" alt="centang"></div>
+                                        <div class="red" style="background-color:#FF5801;"></div>
+                                        <div class="red" style="background-color:#00AEB1;"></div>
+                                        <div class="red" style="background-color:#675A59;"><img
+                                                src="./assets/img/centang.svg" alt="centang"></div>
+                                        <div class="red" style="background-color:#C4C4C4;"></div>
+                                    </div>
+                                </div>
+                                <div class="daerah">
+                                    <h6>Tentukan Daerah </h6>
+                                    <div class="flex-col">
+                                        <select name="daerah" id="daerah">
+                                            <option value="1">Purwokerto</option>
+                                            <option value="2">Banyumas</option>
+                                        </select>
+                                        <button class="main-btn">Selesai</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <input type="text" placeholder="Cari Barang Furniture Anda">
+                    </div>
+                </div>
+                <div class="container navigasi-product-responsive flex-lg-12">
+                    <p>Home > Meja > Meja Modern > Meja Cokelat Modern</p>
+                </div>
+            </div>
+            <!-- End nav responsive -->
+        </header>
+        <!-- Content -->
+        <div class="content">
+            <div class="product-price container-80">
+                <div class="price-title flex justify-between align-center">
+                    <div class="price-left">
+                        <h1>Kursi Modern Minimalis Berwana Pink</h1>
+                        <div class="mini-title flex">
+                            <span class="title-brand">
+                                <p class="grey-title">Brand : <span class="black">NoBrand</span></p>
+                            </span>
+                            <span class="flex align-center title-rating"><img src="./assets/img/rating_2.png"
+                                    alt="rating">
+                                <p>( 27 Pembeli )</p>
+                            </span>
+                            <p class="title-kode grey-title">Kode Barang : <span class="black">A1B2C3D4</span></p>
+                        </div>
+                    </div>
+                    <div class="price-right flex align-center">
+                        <p>Share Link</p>
+                        <div class="placeholder-grey flex justify-center align-center">
+                            <img src="./assets/img/fb.svg" alt="fb">
+                        </div>
+                        <div class="placeholder-grey flex justify-center align-center">
+                            <img src="./assets/img/twit.svg" alt="twit">
+                        </div>
+                        <div class="placeholder-grey flex justify-center align-center">
+                            <img src="./assets/img/link.svg" alt="link">
+                        </div>
+                    </div>
+                </div>
+                <div class="price-detail flex">
+                    <div class="price-detail-left flex-xxl-9 flex-xl-9">
+                        <div class="flex">
+                            <div class="price-detail-image">
+                                <img src="./assets/img/kursi_detail.png" alt="kursi">
+                                <div>
+                                    <img src="./assets/img/kursi_detail_small.png" alt="small">
+                                    <img src="./assets/img/kursi_detail_small.png" alt="small">
+                                    <img src="./assets/img/kursi_detail_small.png" alt="small">
+                                    <img src="./assets/img/kursi_detail_small.png" alt="small">
+                                </div>
+                            </div>
+                            <div class="price-harga flex-xxl-12 flex-xl-12">
+                                <div class="price-harga-1">
+                                    <h6 style="text-decoration: line-through;">Rp 500.000</h6>
+                                    <div class="diskon flex">
+                                        <h1 class="t40">Rp 250.000</h1>
+                                        <div class="counters flex align-center">
+                                            <div class="counter-hours flex align-center justify-center">
+                                                <h5 class="white counter" id="jam">23</h5>
+                                            </div>
+                                            <div class="counter-minute flex align-center justify-center">
+                                                <h5 class="white counter" id="menit">58</h5>
+                                            </div>
+                                            <div class="counter-second flex align-center justify-center">
+                                                <h5 class="white counter" id="detik">28</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="kondisi flex">
+                                        <p>Kondisi : <span class="bold green">Baru</span></p>
+                                        <p>Status : <span class="bold green">Ready Stock</span></p>
+                                    </div>
+                                </div>
+                                <div class="price-harga-2">
+                                    <div class="input flex">
+                                        <div class="form-input flex-xxl-5 flex-xl-5">
+                                            <p>Jumlah</p>
+                                            <div class="input-quantity flex align-center justify-between">
+                                                <h1>-</h1>
+                                                <h1 style="font-weight: 500">1</h1>
+                                                <h1>+</h1>
+                                            </div>
+                                        </div>
+                                        <div class="form-input input-catatan flex-xxl-7 flex-xl-7">
+                                            <p>Catatan untuk penjual</p>
+                                            <input type="text" placeholder="Contoh : Warna Cokelat, Warna Hitam">
+                                        </div>
+                                    </div>
+                                    <div class="input-button flex">
+                                        <button class="flex-xxl-6 flex-xl-6 main-btn-beli">Beli Sekarang</button>
+                                        <button class="flex-xxl-6 flex-xl-6 secondary-btn-beli">Chat Penjual</button>
+                                    </div>
+                                    <div class="security flex align-center">
+                                        <img src="./assets/img/guard.svg" alt="guard">
+                                        <p>Jaminan 100% Aman Belanja Di PropertyKu. <a class="main-color"
+                                                style="text-decoration: underline">Selengkapnya</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fragment -->
+                        <div class="more-info">
+                            <div id="tabs">
+                                <div class="tabs">
+                                    <ul class="flex">
+                                        <li class="active list-tabs"><a href="#fragment-1" class="t18">Informasi
+                                                Barang</a></li>
+                                        <li class="list-tabs"><a href="#fragment-2" class="t18">Estimasi
+                                                Ongkos Kirim</a>
+                                        </li>
+                                        <li class="list-tabs"><a href="#fragment-3" class="t18">25
+                                                Feedback</a></li>
+                                        <li class="list-tabs"><a href="#fragment-4" class="t18">17 Ulasan</a>
+                                        </li>
+                                        <li class="list-tabs"><a href="#fragment-5" class="t18">4 Diskusi
+                                                Barang</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tabs-content">
+                                    <div id="fragment-1" class="content">
+                                        <p>Kursi Modern Minnimalis Berwarna Pink adalah kursi yang di ciptakan dengan
+                                            tema yang minimalis, kursi ini di sukai orang yang membutuhkan kursi untuk
+                                            pekerjaan mereka, seperti designer atau developer. Kursi Modern Minnimalis
+                                            Berwarna Pink di poles dengan bahan yang khusus sehingga tekstur meja ini
+                                            sangat halus dan nyaman di gunakan. </p>
+                                        <p>- Bahan : Kayu Jati<br>
+                                            - Berat : 15 Kg<br>
+                                            - Panjang : 3 meter<br>
+                                            - Lebar : 5 meter<br>
+                                        </p>
+                                        <p>“Saya siap melayani daerah seluruh INDONESIA, karena kepuasan anda adalah
+                                            tujuan saya.”
+                                            -BERNARD DAELY</p>
+                                    </div>
+                                    <div id="fragment-2" class="content">
+                                        <div class="form flex">
+                                            <div class="form-1">
+                                                <p>Jumlah</p>
+                                                <div class="input-quantity flex align-center justify-between">
+                                                    <h1>-</h1>
+                                                    <h1 style="font-weight: 500">1</h1>
+                                                    <h1>+</h1>
+                                                </div>
+                                            </div>
+                                            <div class="form-2">
+                                                <p>Masukan Tujuan</p>
+                                                <div class="flex align-center justify-start">
+                                                    <div class="select-1 flex-xl-4">
+                                                        <select name="Pilih Provinsi" id="">
+                                                            <option value="">Pilih Provinsi</option>
+                                                            <option value="">Wonosobo</option>
+                                                            <option value="">Purwokerto</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="select-2 flex-xl-4">
+                                                        <select name="Pilih Provinsi" id="">
+                                                            <option value="">Pilih Kota/Kabupaten</option>
+                                                            <option value="">Wonosobo</option>
+                                                            <option value="">Purwokerto</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="select-3 flex-xl-4">
+                                                        <select name="Pilih Provinsi" id="">
+                                                            <option value="">Pilih Kecamatan</option>
+                                                            <option value="">Wonosobo</option>
+                                                            <option value="">Purwokerto</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ongkir">
+                                            <div class="ongkir-detail flex">
+                                                <div class="form-1">
+                                                    <p>Pilih Jasa Pengiriman</p>
+                                                    <div class="jasa flex align-center">
+                                                        <span class="flex align-center justify-center"><img
+                                                                src="./assets/img/jne.png" alt="jne"></span>
+                                                        <span class="flex align-center justify-center"><img
+                                                                src="./assets/img/jt.png" alt="jne"></span>
+                                                        <span class="flex align-center justify-center"><img
+                                                                src="./assets/img/tiki.png" alt="jne"></span>
+                                                    </div>
+                                                    <div class="btn flex align-center justify-center">
+                                                        <button>Cek Ongkos Kirim</button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-2">
+                                                    <p>Total Harga Ongkos Kirim</p>
+                                                    <div class="flex align-center">
+                                                        <h5>Rp 20.000</h5>
+                                                        <h6>± Pengiriman 1-2 Hari </h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="fragment-3" class="content">
+                                        <div class="feedback">
+                                            <div class="title flex-col">
+                                                <p>Berikan Feedback</p>
+                                                <div class="input flex align-center flex-xxl-12 flex-xl-12">
+                                                    <input type="text" placeholder="Tuliskan Feedback Kamu Disini">
+                                                    <button class="main-btn">Kirim</button>
+                                                </div>
+                                            </div>
+                                            <div class="feedback-pesan">
+                                                <div class="pesan flex">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_1.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Seth William</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                            nya saya sangat suka. Dengan kursi ini saya semakin
+                                                            bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                            freelancer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pesan flex">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_2.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Michelle Cohan</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                            nya saya sangat suka. Dengan kursi ini saya semakin
+                                                            bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                            freelancer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pesan flex">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_3.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Katelyn Nacon</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                            nya saya sangat suka. Dengan kursi ini saya semakin
+                                                            bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                            freelancer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pesan flex">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_4.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Samantha Morton</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                            nya saya sangat suka. Dengan kursi ini saya semakin
+                                                            bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                            freelancer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pesan flex">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_5.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Tom James</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                            nya saya sangat suka. Dengan kursi ini saya semakin
+                                                            bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                            freelancer.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#">Lihat Semua Ulasan</a>
+                                        </div>
+                                    </div>
+                                    <div id="fragment-4" class="content">
+                                        <div class="ulasan">
+                                            <div class="rating-ulasan flex justify-center">
+                                                <div class="rating-nilai">
+                                                    <h1>40</h1>
+                                                    <img src="./assets/img/rating_2.png" alt="rating">
+                                                    <p class="grey-text">18 Ulasan</p>
+                                                </div>
+                                                <div class="rating-rata">
+                                                    <div class="rating-rata-comp flex align-center">
+                                                        <p>5</p>
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang">
+                                                        <div class="bar flex align-center">
+                                                            <div class="bar-orange" style="width:80%"></div>
+                                                        </div>
+                                                        <p>17</p>
+                                                    </div>
+                                                    <div class="rating-rata-comp flex align-center">
+                                                        <p>4</p>
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang">
+                                                        <div class="bar flex align-center">
+                                                            <div class="bar-orange" style="width:20%"></div>
+                                                        </div>
+                                                        <p>1</p>
+                                                    </div>
+                                                    <div class="rating-rata-comp flex align-center">
+                                                        <p>3</p>
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang">
+                                                        <div class="bar flex align-center">
+                                                            <div class="bar-orange">
+                                                            </div>
+                                                        </div>
+                                                        <p>0</p>
+                                                    </div>
+                                                    <div class="rating-rata-comp flex align-center">
+                                                        <p>2</p>
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang">
+                                                        <div class="bar flex align-center">
+                                                            <div class="bar-orange"></div>
+                                                        </div>
+                                                        <p>0</p>
+                                                    </div>
+                                                    <div class="rating-rata-comp flex align-center">
+                                                        <p>1</p>
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang">
+                                                        <div class="bar flex align-center">
+                                                            <div class="bar-orange"></div>
+                                                        </div>
+                                                        <p>0</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="total-ulasan flex justify-between align-center">
+                                                <h6>Total : 18 Ulasan</h6>
+                                                <div class="filter flex align-center">
+                                                    <h6>Filter :</h6>
+                                                    <div class="card-filter flex align-center">
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang_1">
+                                                        <p>1</p>
+                                                    </div>
+                                                    <div class="card-filter flex align-center">
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang_1">
+                                                        <p>2</p>
+                                                    </div>
+                                                    <div class="card-filter flex align-center active">
+                                                        <img src="./assets/img/bintang_putih.svg" alt="bintang_1">
+                                                        <p>3</p>
+                                                    </div>
+                                                    <div class="card-filter flex align-center">
+                                                        <img src="./assets/img/bintang_1.svg" alt="bintang_1">
+                                                        <p>4</p>
+                                                    </div>
+                                                    <div class="card-filter flex align-center active">
+                                                        <img src="./assets/img/bintang_putih.svg" alt="bintang_1">
+                                                        <p>5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="feedback-pesan">
+                                            <div class="pesan flex">
+                                                <div class="img">
+                                                    <img src="./assets/img/person_6.png" alt="person1">
+                                                </div>
+                                                <div class="profile-pesan">
+                                                    <img src="./assets/img/rating_2.png" alt="rating">
+                                                    <h4>Emily Kinney</h4>
+                                                    <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                    <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                        nya saya sangat suka. Dengan kursi ini saya semakin
+                                                        bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                        freelancer.</p>
+                                                </div>
+                                            </div>
+                                            <div class="pesan flex">
+                                                <div class="img">
+                                                    <img src="./assets/img/person_7.png" alt="person1">
+                                                </div>
+                                                <div class="profile-pesan">
+                                                    <img src="./assets/img/rating_2.png" alt="rating">
+                                                    <h4>Sarah Wayne Callies</h4>
+                                                    <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                    <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                        nya saya sangat suka. Dengan kursi ini saya semakin
+                                                        bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                        freelancer.</p>
+                                                </div>
+                                            </div>
+                                            <div class="pesan flex">
+                                                <div class="img">
+                                                    <img src="./assets/img/person_8.png" alt="person1">
+                                                </div>
+                                                <div class="profile-pesan">
+                                                    <img src="./assets/img/rating_2.png" alt="rating">
+                                                    <h4>Scott Wilson</h4>
+                                                    <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                    <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                        nya saya sangat suka. Dengan kursi ini saya semakin
+                                                        bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                        freelancer.</p>
+                                                </div>
+                                            </div>
+                                            <div class="pesan flex">
+                                                <div class="img">
+                                                    <img src="./assets/img/person_7.png" alt="person1">
+                                                </div>
+                                                <div class="profile-pesan">
+                                                    <img src="./assets/img/rating_2.png" alt="rating">
+                                                    <h4>Laurie Holden</h4>
+                                                    <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                    <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                        nya saya sangat suka. Dengan kursi ini saya semakin
+                                                        bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                        freelancer.</p>
+                                                </div>
+                                            </div>
+                                            <div class="pesan flex">
+                                                <div class="img">
+                                                    <img src="./assets/img/person_10.png" alt="person1">
+                                                </div>
+                                                <div class="profile-pesan">
+                                                    <img src="./assets/img/rating_2.png" alt="rating">
+                                                    <h4>Alexandra Breckenridge</h4>
+                                                    <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                    <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                        nya saya sangat suka. Dengan kursi ini saya semakin
+                                                        bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                        freelancer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#">Lihat Semua Ulasan</a>
+                                    </div>
+                                    <div id="fragment-5" class="content">
+                                        <div class="diskusi">
+                                            <div class="title flex-col">
+                                                <p>Berikan Pertanyaan</p>
+                                                <div class="input flex align-center flex-xxl-12 flex-xl-12">
+                                                    <input type="text" placeholder="Tuliskan Pertanyaan Kamu Disini">
+                                                    <button class="main-btn">Kirim</button>
+                                                </div>
+                                            </div>
+                                            <div class="feedback-pesan">
+                                                <div class="pesan flex">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_8.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Scott Wilson</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                            nya saya sangat suka. Dengan kursi ini saya semakin
+                                                            bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                            freelancer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pesan flex balasan">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_11.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Bernard Daely</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Halo juga kak, kalau cara membersihkan itu
+                                                            seperti kursi kursi biasanya kak. Bisa dengan kain atau lap
+                                                            yang bersih.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pesan flex">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_9.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Katelyn Nacon</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Cepat sekali pengiriman barang nya, dan barang
+                                                            nya saya sangat suka. Dengan kursi ini saya semakin
+                                                            bersemangat untuk melakukan pekerjaan saya yaitu designer
+                                                            freelancer.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="pesan flex balasan">
+                                                    <div class="img">
+                                                        <img src="./assets/img/person_11.png" alt="person1">
+                                                    </div>
+                                                    <div class="profile-pesan">
+                                                        <h4>Bernard Daely</h4>
+                                                        <p class="tanggal">17 Oktober 2019 07:00 WIB</p>
+                                                        <p class="black">Halo juga kak, kalau cara membersihkan itu
+                                                            seperti kursi kursi biasanya kak. Bisa dengan kain atau lap
+                                                            yang bersih.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of fragment -->
+                    </div>
+                    <div class="price-detail-right flex-xxl-3 flex-xl-3">
+                        <div class="profile-price">
+                            <div class="profile-name pad-content-price">
+                                <p class="main-color semi-bold">Proppers</p>
+                                <div class="box-profile-name flex align-start">
+                                    <img src="./assets/img/face.png" alt="face">
+                                    <div class="name">
+                                        <h4>BERNARD DAELY</h4>
+                                        <p>99% (254 Feedback)</p>
+                                        <span class="flex align-center">
+                                            <img src="./assets/img/location-pin.svg" alt="location">
+                                            <a href="#">Purwokerto, Jawa Tengah</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="detail-propers pad-content-price">
+                                <p class="main-color semi-bold">Detail Proppers</p>
+                                <div class="detail-container flex align-center">
+                                    <div class="detail">
+                                        <p class="grey-text">Waktu Mengirim</p>
+                                        <p class="grey-text">Pelanggan</p>
+                                        <p class="grey-text">Pesanan Diterima</p>
+                                        <p class="grey-text">Login Terakhir</p>
+                                        <p class="grey-text">Begabung</p>
+                                    </div>
+                                    <div class="detail-right">
+                                        <p>± 1-2 Hari</p>
+                                        <p>127 Orang</p>
+                                        <p>187 dari 200</p>
+                                        <p>1 Jam Yang Lalu</p>
+                                        <p>27 Juni 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dukungan pad-content-price">
+                                <p class="main-color semi-bold">Dukungan Pengiriman</p>
+                                <div class="table-kirim">
+                                    <div class="flex">
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <p>Pengiriman</p>
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <p>Reguler</p>
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <p>Kilat</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <img src="./assets/img/jne.png" alt="jne">
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <img src="./assets/img/centang_ijo.png" alt="centang">
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <img src="./assets/img/jt.png" alt="jt">
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <img src="./assets/img/centang_ijo.png" alt="centang">
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                        </div>
+                                    </div>
+                                    <div class="flex">
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <img src="./assets/img/tiki.png" alt="tiki">
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                        </div>
+                                        <div class="flex-xxl-4 flex-xl-4 flex justify-center align-start">
+                                            <img src="./assets/img/centang_ijo.png" alt="centang">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="terkait pad-content-price" style="border-bottom: none">
+                                <p class="main-color semi-bold">Pencarian Terkait</p>
+                                <div class="terkait-container flex wrap">
+                                    <p class="grey-text">Kursi</p>
+                                    <p class="grey-text">Minimalis</p>
+                                    <p class="grey-text">Pink</p>
+                                    <p class="grey-text">Keluarga</p>
+                                    <p class="grey-text">Ruang Tamu</p>
+                                    <p class="grey-text">Anak-Anak</p>
+                                    <p class="grey-text">Simple</p>
+                                    <p class="grey-text">Kayu Jati</p>
+                                    <p class="grey-text">Trend</p>
+                                    <p class="grey-text">Modern</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flash Deal -->
+            <div class="flash">
+                <div class="flash-title container flex align-center justify-between wrap">
+                    <div class="flash-title-left flex align-center flex-xxl-4 flex-xl-4 flex-lg-4 flex-md-4 flex-s-6">
+                        <h1>Produk Lainya Dari Toko Ini</h1>
+                    </div>
+                    <div
+                        class="flash-title-right flex justify-end align-center flex-xxl-8 flex-xl-8 flex-lg-8 flex-md-8 flex-s-6">
+                        <div class="flex align-center">
+                            <a href="#" class="main-color">Lihat Semua</a>
+                            <div class="navigasi-btn flex align-center">
+                                <div class="navigasi-btn-left" id="lainnya-btn-left">
+                                    <img src="./assets/img/left-arrow.svg" alt="left">
+                                </div>
+                                <div class="navigasi-btn-right" id="lainnya-btn-right">
+                                    <img src="./assets/img/right-arrow.svg" alt="right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flash-items container-left" id="lainnya-carousel">
+                    <div class="item">
+                        <div class="product">
+                            <div class="bg-product flex justify-end align-start">
+                                <p class="white placeholder-min">- 50%</p>
+                            </div>
+                            <div class="detail-product">
+                                <div class="rating flex align-center">
+                                    <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                </div>
+                                <div class="detail">
+                                    <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                    <p class="detail-coret">Rp. 200.000</p>
+                                    <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                    <small>87 Tersisa</small>
+                                    <div class="bar flex justify-start align-center">
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product">
+                            <div class="bg-product flex justify-end align-start">
+                                <p class="white placeholder-min">- 50%</p>
+                            </div>
+                            <div class="detail-product">
+                                <div class="rating flex align-center">
+                                    <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                </div>
+                                <div class="detail">
+                                    <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                    <p class="detail-coret">Rp. 200.000</p>
+                                    <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                    <small>87 Tersisa</small>
+                                    <div class="bar flex justify-start align-center">
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="item">
+                        <div class="product">
+                            <div class="bg-product flex justify-end align-start">
+                                <p class="white placeholder-min">- 50%</p>
+                            </div>
+                            <div class="detail-product">
+                                <div class="rating flex align-center">
+                                    <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                </div>
+                                <div class="detail">
+                                    <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                    <p class="detail-coret">Rp. 200.000</p>
+                                    <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                    <small>87 Tersisa</small>
+                                    <div class="bar flex justify-start align-center">
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product">
+                            <div class="bg-product flex justify-end align-start">
+                                <p class="white placeholder-min">- 50%</p>
+                            </div>
+                            <div class="detail-product">
+                                <div class="rating flex align-center">
+                                    <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                </div>
+                                <div class="detail">
+                                    <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                    <p class="detail-coret">Rp. 200.000</p>
+                                    <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                    <small>87 Tersisa</small>
+                                    <div class="bar flex justify-start align-center">
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product">
+                            <div class="bg-product flex justify-end align-start">
+                                <p class="white placeholder-min">- 50%</p>
+                            </div>
+                            <div class="detail-product">
+                                <div class="rating flex align-center">
+                                    <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                </div>
+                                <div class="detail">
+                                    <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                    <p class="detail-coret">Rp. 200.000</p>
+                                    <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                    <small>87 Tersisa</small>
+                                    <div class="bar flex justify-start align-center">
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product">
+                            <div class="bg-product flex justify-end align-start">
+                                <p class="white placeholder-min">- 50%</p>
+                            </div>
+                            <div class="detail-product">
+                                <div class="rating flex align-center">
+                                    <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                </div>
+                                <div class="detail">
+                                    <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                    <p class="detail-coret">Rp. 200.000</p>
+                                    <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                    <small>87 Tersisa</small>
+                                    <div class="bar flex justify-start align-center">
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="product">
+                            <div class="bg-product flex justify-end align-start">
+                                <p class="white placeholder-min">- 50%</p>
+                            </div>
+                            <div class="detail-product">
+                                <div class="rating flex align-center">
+                                    <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                </div>
+                                <div class="detail">
+                                    <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                    <p class="detail-coret">Rp. 200.000</p>
+                                    <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                    <small>87 Tersisa</small>
+                                    <div class="bar flex justify-start align-center">
+                                        <span class="green"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of flash deal -->
+
+
+                <!-- Flash Deal -->
+                <div class="flash">
+                    <div class="flash-title container flex align-center justify-between wrap">
+                        <div
+                            class="flash-title-left flex align-center flex-xxl-4 flex-xl-4 flex-lg-4 flex-md-4 flex-s-6">
+                            <h1>Barang Terkait</h1>
+                        </div>
+                        <div
+                            class="flash-title-right flex justify-end align-center flex-xxl-8 flex-xl-8 flex-lg-8 flex-md-8 flex-s-6">
+                            <div class="flex align-center">
+                                <a href="#" class="main-color">Lihat Semua</a>
+                                <div class="navigasi-btn flex align-center">
+                                    <div class="navigasi-btn-left" id="terkait-btn-left">
+                                        <img src="./assets/img/left-arrow.svg" alt="left">
+                                    </div>
+                                    <div class="navigasi-btn-right" id="terkait-btn-right">
+                                        <img src="./assets/img/right-arrow.svg" alt="right">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flash-items container-left" id="terkait-carousel">
+                        <div class="item">
+                            <div class="product">
+                                <div class="bg-product flex justify-end align-start">
+                                    <p class="white placeholder-min">- 50%</p>
+                                </div>
+                                <div class="detail-product">
+                                    <div class="rating flex align-center">
+                                        <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                    </div>
+                                    <div class="detail">
+                                        <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                        <p class="detail-coret">Rp. 200.000</p>
+                                        <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                        <small>87 Tersisa</small>
+                                        <div class="bar flex justify-start align-center">
+                                            <span class="green"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <div class="bg-product flex justify-end align-start">
+                                    <p class="white placeholder-min">- 50%</p>
+                                </div>
+                                <div class="detail-product">
+                                    <div class="rating flex align-center">
+                                        <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                    </div>
+                                    <div class="detail">
+                                        <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                        <p class="detail-coret">Rp. 200.000</p>
+                                        <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                        <small>87 Tersisa</small>
+                                        <div class="bar flex justify-start align-center">
+                                            <span class="green"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <div class="bg-product flex justify-end align-start">
+                                    <p class="white placeholder-min">- 50%</p>
+                                </div>
+                                <div class="detail-product">
+                                    <div class="rating flex align-center">
+                                        <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                    </div>
+                                    <div class="detail">
+                                        <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                        <p class="detail-coret">Rp. 200.000</p>
+                                        <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                        <small>87 Tersisa</small>
+                                        <div class="bar flex justify-start align-center">
+                                            <span class="green"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <div class="bg-product flex justify-end align-start">
+                                    <p class="white placeholder-min">- 50%</p>
+                                </div>
+                                <div class="detail-product">
+                                    <div class="rating flex align-center">
+                                        <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                    </div>
+                                    <div class="detail">
+                                        <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                        <p class="detail-coret">Rp. 200.000</p>
+                                        <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                        <small>87 Tersisa</small>
+                                        <div class="bar flex justify-start align-center">
+                                            <span class="green"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <div class="bg-product flex justify-end align-start">
+                                    <p class="white placeholder-min">- 50%</p>
+                                </div>
+                                <div class="detail-product">
+                                    <div class="rating flex align-center">
+                                        <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                    </div>
+                                    <div class="detail">
+                                        <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                        <p class="detail-coret">Rp. 200.000</p>
+                                        <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                        <small>87 Tersisa</small>
+                                        <div class="bar flex justify-start align-center">
+                                            <span class="green"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <div class="bg-product flex justify-end align-start">
+                                    <p class="white placeholder-min">- 50%</p>
+                                </div>
+                                <div class="detail-product">
+                                    <div class="rating flex align-center">
+                                        <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                    </div>
+                                    <div class="detail">
+                                        <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                        <p class="detail-coret">Rp. 200.000</p>
+                                        <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                        <small>87 Tersisa</small>
+                                        <div class="bar flex justify-start align-center">
+                                            <span class="green"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="product">
+                                <div class="bg-product flex justify-end align-start">
+                                    <p class="white placeholder-min">- 50%</p>
+                                </div>
+                                <div class="detail-product">
+                                    <div class="rating flex align-center">
+                                        <img src="./assets/img/rating_2.png" alt="rating" class="star">
+                                    </div>
+                                    <div class="detail">
+                                        <p class="detail-title">Kursi Modern Berwarna Putih</p>
+                                        <p class="detail-coret">Rp. 200.000</p>
+                                        <h3 class="main-color" style="padding: 5px 0 15px 0;">Rp 100.000</h3>
+                                        <small>87 Tersisa</small>
+                                        <div class="bar flex justify-start align-center">
+                                            <span class="green"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of flash deal -->
+                </div>
+                <!-- End of Content -->
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form screen-1" id="tabss">
+            <div class="tabs-akun flex align-center">
+                <ul class="flex-xxl-6 flex-xl-6 flex align-center justify-center sign">
+                    <li class="tab-go activeGo"><a href="#masuk" class="text-20-white">Masuk</a></li>
+                    <span class="text-20-white">/</span>
+                    <li class="tab-go"><a href="#daftar" class="text-20-white">Buat Akun</a></li>
+                </ul>
+                <ul class="flex-xxl-6 flex-xl-6 tanpa_daftar flex align-center justify-center">
+                    <li><a href="#" class="text-20-black">Beli Tanpa Daftar</a></li>
+                </ul>
+            </div>
+            <div class="masuk isi-form" id="masuk">
+                <div class="form-comp">
+                    <h5 class="text-14-black">E-mail / Username / Nomor Handphone</h5>
+                    <input type="text" class="text-input">
+                </div>
+                <div class="form-comp">
+                    <h5 class="text-14-black">Password</h5>
+                    <input type="password" class="text-input">
+                </div>
+                <div class="forget flex justify-between align-center">
+                    <span class="flex">
+                        <input type="checkbox">
+                        <p class="text-14-black">Ingat Saya</p>
+                    </span>
+                    <a href="#" class="text-reg-main">Lupa Password?</a>
+                </div>
+                <button class="btn-success text-16-white" id="masukGo">Masuk</button>
+                <span class="or">
+                    <div class="garis"></div>
+                    <p>atau</p>
+                    <div class="garis"></div>
+                </span>
+                <div class="flex wrap">
+                    <div class="flex-xxl-6 flex-xl-6 flex-md-12">
+                        <button class="social-btn flex align-center justify-center"><span><img src="./assets/img/go.png"
+                                    alt="Google"></span>Login dengan Google</button>
+                    </div>
+                    <div class="flex-xxl-6 flex-xl-6 flex-md-12 flex justify-end">
+                        <button class="social-btn flex align-center justify-center"><span><img
+                                    src="./assets/img/fb_biru.png" alt="facebook"></span>Login dengan Facebook</button>
+                    </div>
+                </div>
+            <a href="detail.html" class="exit"><h1 class="white">X</h1></a>
+            </div>
+            <div id="daftar" class="isi-form">
+                <div class="flex column daftar">
+                    <div class="flex-xxl-6 flex-xl-6" style="padding-right: 60px">
+                        <div class="form-comp">
+                            <h5 class="text-14-black">Nama Depan</h5>
+                            <input type="text" class="half-input">
+                        </div>
+                        <div class="form-comp">
+                            <h5 class="text-14-black">Username</h5>
+                            <input type="text" class="half-input">
+                        </div>
+                        <div class="form-comp">
+                            <h5 class="text-14-black">Password</h5>
+                            <input type="password" class="half-input">
+                        </div>
+                        <div class="form-comp">
+                            <h5 class="text-14-black">Password</h5>
+                            <div class="jenis-kelamin flex align-center justify-center">
+                                <button class="btn-kelamin kelamin-active">Laki - Laki</button>
+                                <button class="btn-kelamin">Perempuan</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-xxl-6 flex-xl-6">
+                        <div style="margin-right: 60px">
+                            <div class="form-comp">
+                                <h5 class="text-14-black">Nama Belakang</h5>
+                                <input type="text" class="half-input">
+                            </div>
+                            <div class="form-comp">
+                                <h5 class="text-14-black">Email / Nomor Handphone</h5>
+                                <input type="email" class="half-input">
+                            </div>
+                            <div class="form-comp">
+                                <h5 class="text-14-black">Alamat</h5>
+                                <input type="password" class="half-input">
+                            </div>
+                            <div class="form-comp">
+                                <h5 class="text-14-black">Tanggal Lahir</h5>
+                                <div class="flex select align-center">
+                                    <select name="tanggal" id="tanggal">
+                                        <option value="0">Tanggal</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <select name="tanggal" id="tanggal">
+                                        <option value="0">Bulan</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <select name="tanggal" id="tanggal">
+                                        <option value="0">Tahun</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-daftar" style="padding-right:60px">
+                    <button class="btn-success text-16-white" id="daftarGo">Daftar</button>
+                </div>
+                <div class="flex wrap" style="padding-right:60px !important; margin-top: 30px;">
+                    <div class="flex-xxl-6 flex-xl-6 flex-md-12">
+                        <button class="social-btn flex align-center justify-center"><span><img src="./assets/img/go.png"
+                                    alt="Google"></span>Login dengan Google</button>
+                    </div>
+                    <div class="flex-xxl-6 flex-xl-6 flex-md-12 flex justify-end">
+                        <button class="social-btn flex align-center justify-center"><span><img
+                                    src="./assets/img/fb_biru.png" alt="facebook"></span>Login dengan Facebook</button>
+                    </div>
+                </div>
+                <a href="detail.html" class="exit"><h1 class="white">X</h1></a>
+            </div>
+        </div>
+        <div class="form screen-2">
+            <div class="title flex justify-center align-center">
+                <h1 class="text-20-white">Detail Belanja</h1>
+            </div>
+            <div class="cont-2">
+                <div class="header-detail-belanja flex wrap align-center">
+                    <div class="header-judul flex-xxl-7 flex-xl-7">
+                        <h1 class="text-30-black">Kursi Cokelat Modern</h1>
+                    </div>
+                    <div class="header-brand flex-xxl-2 flex-xl-2">
+                        <p class="text-14-darkGrey">Brand :<span class="text-14-black">&nbsp;No Brand</span></p>
+                    </div>
+                    <div class="header-kode flex-xxl-3 flex-xl-3 flex justify-end">
+                        <p class="text-14-darkGrey">Kode Barang :<span class="text-14-black">&nbsp;A1B2C3D4</span></p>
+                    </div>
+                </div>
+                <div class="body-detail-belanja flex wrap">
+                    <div class="grid-picture flex-xxl-4 flex-xl-4 flex-md-12">
+                        <div class="big">
+                            <img src="./assets/img/kursi_1.png" alt=kursi_1>
+                        </div>
+                        <div class="small">
+                            <img src="./assets/img/kursi_1.png" alt=kursi_1>
+                        </div>
+                        <div class="small">
+                            <img src="./assets/img/kursi_1.png" alt=kursi_1>
+                        </div>
+                        <div class="small">
+                            <img src="./assets/img/kursi_1.png" alt=kursi_1>
+                        </div>
+                        <div class="small">
+                            <img src="./assets/img/kursi_1.png" alt=kursi_1>
+                        </div>
+                    </div>
+                    <div class="flex-xxl-8 flex-xl-8 flex-md-12">
+                        <div class="price">
+                            <div class="price-detail">
+                                <h1 class="text-40-main  flex align-center">Rp 250.000<span class="text-20-black"
+                                        style="margin-left:10px;text-decoration:line-through">Rp 500.000</span></h1>
+                            </div>
+                            <div class="material flex align-center">
+                                <div class="mate flex-xxl-3 flex-xl-3">
+                                    <p class="text-14-darkGrey">Bahan</p>
+                                    <h3 class="text-20-black">Kayu Jati</h3>
+                                </div>
+                                <div class="mate flex-xxl-3 flex-xl-3 flex-col justify-center">
+                                    <p class="text-14-darkGrey">Berat</p>
+                                    <h3 class="text-20-black">15 Kg</h3>
+                                </div>
+                                <div class="mate flex-xxl-3 flex-xl-3 flex-col justify-center">
+                                    <p class="text-14-darkGrey">Panjang</p>
+                                    <h3 class="text-20-black">3 Meter</h3>
+                                </div>
+                                <div class="mate flex-xxl-3 flex-xl-3 flex-col justify-center">
+                                    <p class="text-14-darkGrey">Lebar</p>
+                                    <h3 class="text-20-black">5 Meter</h3>
+                                </div>
+                            </div>
+                            <div class="input flex align-start wrap">
+                                <div class="total flex-xxl-4 flex-xl-4">
+                                    <p class="text-14-darkGrey">Jumlah</p>
+                                    <div class="input-quantity flex align-center justify-between">
+                                        <h1 class="text-25-darkGrey">-</h1>
+                                        <h1 class="text-20-main">1</h1>
+                                        <h1 class="text-25-darkGrey">+</h1>
+                                    </div>
+                                </div>
+                                <div class="flex-xxl-8 flex-xl-8">
+                                    <div class="warna">
+                                        <p class="text-14-darkGrey">Warna</p>
+                                        <div class="kumpulan-warna">
+                                            <img src="./assets/img/warna_1.png" alt="warna">
+                                            <img src="./assets/img/warna_2.png" alt="warna">
+                                            <img src="./assets/img/warna_3.png" alt="warna">
+                                            <img src="./assets/img/warna_4.png" alt="warna">
+                                            <img src="./assets/img/warna_5.png" alt="warna">
+                                            <img src="./assets/img/warna_6.png" alt="warna">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="input-form-lagi flex-xxl-12 flex-xl-12">
+                                    <div class="form-comp">
+                                        <p class="text-14-darkGrey">Jasa Pengiriman</p>
+                                        <input type="text" class="text-input"
+                                            placeholder="Contoh : J&T EXPRESS, JNE EXPRESS, GO SEND">
+                                    </div>
+                                    <div class="form-comp">
+                                        <p class="text-14-darkGrey">Catatan</p>
+                                        <textarea name="area" id="area" cols="30" rows="10"
+                                            placeholder="Contoh : Warna, Jenis, Ukuran"></textarea>
+                                    </div>
+                                    <button class="social-btn" id="alamat">Masukan Alamat Pengiriman</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="flex align-center justify-center">
+                    <button class="social-btn text-16-white" id="ringkasan-belanja">Lihat Ringkasan Belanja</button>
+                </div>
+            </div>
+            <a href="detail.html" class="exit"><h1 class="white">X</h1></a>
+        </div>
+        <div class="form screen-3">
+            <div class="title flex justify-center align-center">
+                <h1 class="text-20-white">Ringkasan Belanja</h1>
+            </div>
+            <div class="cont-2">
+                <div class="flex daftar align-center mt-tambah">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Nama Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">Meja Cokelat Modern</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Brand Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">No Brand</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Kode Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">A1B2C3D4</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center mt-tambah">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Bahan Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">Kayu Jati</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Berat Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">15 Kg</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Panjang Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">3 Meter</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Lebar Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">5 Meter</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center mt-tambah">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Jumlah Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">3</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Warna Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">Cokelat</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Jasa Pengiriman</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">J&T EXPRESS</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center mt-tambah">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Alamat Pengiriman</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">Perumahan Puri Mujur Rt.1 Rw.4 No.28, Kroya</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center mt-tambah">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Total Harga Barang</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">Rp 750.000</h3>
+                    </div>
+                </div>
+                <div class="flex daftar align-center">
+                    <div class="daftar-left flex-xxl-6 flex-xl-6">
+                        <h3 class="text-18-darkGrey">Biaya Kirim</h3>
+                    </div>
+                    <div class="daftar-right flex-xxl-6 flex-xl-6 flex justify-end">
+                        <h3 class="text-18-black">Rp 50.000</h3>
+                    </div>
+                </div>
+                <div class="total-belanja flex align-center justify-between">
+                    <h3 class="text-18-black">Total Belanja</h3>
+                    <h3 class="text-18-green">Rp 800.000</h3>
+                </div>
+                <div class="metode flex justify-center">
+                    <button class="social-btn" id="metodee">Pilih Metode Pembayaran</button>
+                </div>
+            </div>
+            <a href="detail.html" class="exit"><h1 class="white">X</h1></a>
+        </div>
+        <div class="form screen-4">
+            <div class="title flex justify-center align-center">
+                <h1 class="text-20-white">Detail Belanja</h1>
+            </div>
+            <div class="cont-2">
+                <div class="flex-col justify-center virtual">
+                    <h1 class="text-reg-black">Transfer Virtual Account</h1>
+                    <img src="./assets/img/kumpulan-bank.png" alt="kumpulan">
+                    <button class="social-btn" id="dapatkan">Dapatkan Kode</button>
+                </div>
+            </div>
+            <a href="detail.html" class="exit"><h1 class="white">X</h1></a>
+        </div>
+        <div class="form screen-5">
+            <div class="title flex justify-center align-center">
+                <h1 class="text-20-white">Detail Belanja</h1>
+            </div>
+            <div class="cont-2">
+                <div class="flex-col justify-center align-center pembayaran">
+                    <h2 class="text-18-black">Kode Bank BCA</h2>
+                    <h1 class="text-30-black">M1U2S3K4E5T6E7E8R</h1>
+                    <p class="text-reg-black">Pembayaran akan tidak berlaku dalam waktu</p>
+                    <div class="counters flex align-center">
+                        <div class="counter-hours flex align-center justify-center">
+                            <h5 class="white counter" id="jam">23</h5>
+                        </div>
+                        <div class="counter-minute flex align-center justify-center">
+                            <h5 class="white counter" id="menit">58</h5>
+                        </div>
+                        <div class="counter-second flex align-center justify-center">
+                            <h5 class="white counter" id="detik">28</h5>
+                        </div>
+                    </div>
+                    <button class="btn-success text-16-white" style="margin-top:30px"><a href="detail.html" class="white">Kembali</a></button>
+
+                </div>
+            </div>
+            <a href="detail.html" class="exit"><h1 class="white">X</h1></a>
+        </div>
+    </div>
+    <script src="./assets/script/jquery.min.js"></script>
+    <script src="./assets/script/slick.js"></script>
+    <script src="./assets/script/jquery-ui.js"></script>
+    <script src="./assets/script/detail.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#tabss").tabs();
+        });
+
+        $(document).ready(function () {
+
+            $('#masukGo').click(function () {
+                $('.screen-1').addClass("hide");
+                $('.screen-2').addClass("show");
+            });
+
+            $('#daftarGo').click(function () {
+                $('.screen-1').addClass("hide");
+                $('.screen-2').addClass("show");
+            });
+
+            $('#ringkasan-belanja').click(function () {
+                $('.screen-2').removeClass("show");
+                $('.screen-3').addClass("show");
+            })
+
+            $('#metodee').click(function () {
+                $('.screen-3').removeClass("show");
+                $('.screen-4').addClass("show");
+            })
+
+            $('#dapatkan').click(function () {
+                $('.screen-4').removeClass("show");
+                $('.screen-5').addClass("show");
+            })
+
+            $("li.tab-go").click(function () {
+                $(this).addClass("activeGo").siblings().removeClass("activeGo");
+            });
+            $("button.btn-kelamin").click(function () {
+                $(this).addClass("kelamin-active").siblings().removeClass("kelamin-active");
+            });
+
+        });
+    </script>
+</body>
+
+</html>
